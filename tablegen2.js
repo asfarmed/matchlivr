@@ -41,16 +41,9 @@ t.parent().find(".date").html("لم تبدا بعد").addClass("not-start"),
                 d = moment.utc(a).toDate(), t.parent().find("#match-time").text(moment(d).format("LT")), t.parent().find(".date").html("إنتهت المباراة").addClass("end"), t.parents(".match-container").addClass("mend")
         }
     })
-});
-
-
-function dotab(elem) { var a = document.getElementsByTagName('button'); for (i = 0; i < a.length; i++) { a[i].classList.remove('btn-primary') } elem.classList.add('btn-primary'); } function setURL(url){ document.getElementById('iframe').src = url; }
-
-var sid= $('.vcount').attr('data-sid');
-	$.getJSON("https://api.countapi.xyz/hit/"+window.location.host+"/"+sid, function(response) {
-	$('#visitor-count').html('<i class="fa fa-eye" aria-hidden="true"></i>'+response.value);
-	console.log("https://api.countapi.xyz/hit/"+window.location.host+"/"+sid);
 }
+
+
 
 
   $( "#testmode" ).click(function() {
